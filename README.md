@@ -8,7 +8,7 @@
 
 -   [x] Download or view files using signed URLs
 
--   [x]Unit Testing
+-   [x] Unit Testing
 
 -   [x] Coverage Reports
 
