@@ -76,7 +76,7 @@ describe('S3Service', () => {
     it('should return the result of s3Client.send', async () => {
       const result = await service.listBuckets();
 
-      expect(result).toBe(mockResult.Buckets);
+      expect(result).toEqual(mockResult.Buckets);
     });
   });
 
@@ -121,7 +121,7 @@ describe('S3Service', () => {
     it('should return the result of s3Client.send', async () => {
       const result = await service.listObjects(bucket);
 
-      expect(result).toBe(mockResult.Contents);
+      expect(result).toStrictEqual(mockResult.Contents);
     });
   });
 

@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { S3Controller } from './s3.controller';
 import { S3Service } from './s3.service';
-import { faker } from '@faker-js/faker';
+import { faker, ur } from '@faker-js/faker';
 
 describe('S3Controller', () => {
   let controller: S3Controller;
@@ -114,7 +114,7 @@ describe('S3Controller', () => {
           bucketIdentifier,
           objectKey,
         ),
-      ).toBe(mockResult);
+      ).toEqual({ url: mockResult });
     });
   });
 });
