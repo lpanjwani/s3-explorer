@@ -1,5 +1,21 @@
 # Tuza S3 Challenge
 
+## Features
+
+[x] Enumerate available buckets in the AWS account
+[x] Access files from a private S3 bucket
+[x] Download or view files using signed URLs
+[x] Unit Testing
+[x] Coverage Reports
+[x] End-to-End (E2E) Testing
+[x] Swagger documentation
+[x] Material UI components
+[x] Manage secrets through environment variables
+[x] React Routing
+[x] TypeScript for static typing and scalability
+[x] Linting
+[x] Formatter
+
 ## Project Structure
 
 The project structure has a directory hierarchy containing two main components: the Next.js frontend and the Node.js backend.
@@ -57,10 +73,12 @@ Several assumptions were made regarding business, technical, and team aspects ar
 
 1. **Implement Authentication**: Adding service to service authentication can be a significant enhancement in terms of security.
 
-2. **Add Frontend Tests**: Ensuring that all components, pages, and utilities are thoroughly tested. This could include unit tests, integration tests, and end-to-end tests.
+2. **Improve Frontend Testing Setup**: Ensuring that all components, pages, and utilities are thoroughly tested. This could include unit tests, integration tests, and end-to-end tests.
 
-3. **Performance Optimization**: Opportunities to optimize the performance. This could involve implementing caching, or load testing to identify bottlenecks.
+3. **Pagination**: When managing and navigating large sets of data. This feature allows users to view data in a series of pages, thus improving the application's performance and usability by only loading a subset of data at any one time.
 
 4. **Implement Continuous Integration/Continuous Deployment (CI/CD)**: A CI/CD pipeline will automate testing and deployment process.
 
 5. **Improve Error Handling**: Robust error handling and reporting can make it easier to identify and fix issues that arise such as using Sentry.
+
+6. **Use Server Side Rendering**: Leverage Next.js Server Side Rendering to abstract API calls.
