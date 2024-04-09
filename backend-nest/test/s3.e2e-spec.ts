@@ -18,10 +18,10 @@ describe('S3Controller (e2e)', () => {
     await app.init();
   });
 
-  describe('GET /s3/buckets', () => {
+  describe('GET /buckets', () => {
     it('should return 200 with expected response', () => {
       return request(app.getHttpServer())
-        .get('/s3/buckets')
+        .get('/buckets')
         .expect(200)
         .expect((res) => {
           expect(res.body.length).toBeGreaterThan(0);
@@ -40,16 +40,16 @@ describe('S3Controller (e2e)', () => {
     });
   });
 
-  describe('GET /s3/buckets/:bucketName/objects', () => {
+  describe('GET /buckets/:bucketName/objects', () => {
     it('with invalid bucket name, should return 500', () => {
       return request(app.getHttpServer())
-        .get(`/s3/buckets/invalid-bucket-name/objects`)
+        .get(`/buckets/invalid-bucket-name/objects`)
         .expect(500);
     });
 
     it('should return 200 with expected response', () => {
       return request(app.getHttpServer())
-        .get(`/s3/buckets/${bucketName}/objects`)
+        .get(`/buckets/${bucketName}/objects`)
         .expect(200)
         .expect((res) => {
           expect(res.body.length).toBeGreaterThan(0);
@@ -71,11 +71,14 @@ describe('S3Controller (e2e)', () => {
     });
   });
 
-  describe('GET /s3/buckets/:bucketName/objects/:objectKey/download', () => {
+  describe('GET /buckets/:bucketName/objects/download', () => {
     it('should return 200 with expected response', () => {
       return request(app.getHttpServer())
-        .get(`/s3/buckets/${bucketName}/objects/${objectKey}/download`)
-        .expect(200)
+        .get(`/buckets/${bucketName}/objects/download`)
+        .query({
+          objectKey,
+        })
+        .expect(302)
         .expect((res) => {
           expect(res.text).toEqual(expect.any(String));
         });
