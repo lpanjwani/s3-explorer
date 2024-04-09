@@ -4,6 +4,8 @@
 
 -   [x] Enumerate available buckets in the AWS account
 
+-   [x] View files in tree layout
+
 -   [x] Access files from a private S3 bucket
 
 -   [x] Download or view files using signed URLs
