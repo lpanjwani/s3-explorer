@@ -2,31 +2,31 @@
 
 ## Features
 
-[x] Enumerate available buckets in the AWS account
+-   [x] Enumerate available buckets in the AWS account
 
-[x] Access files from a private S3 bucket
+-   [x] Access files from a private S3 bucket
 
-[x] Download or view files using signed URLs
+-   [x] Download or view files using signed URLs
 
-[x] Unit Testing
+-   [x]Unit Testing
 
-[x] Coverage Reports
+-   [x] Coverage Reports
 
-[x] End-to-End (E2E) Testing
+-   [x] End-to-End (E2E) Testing
 
-[x] Swagger documentation
+-   [x] Swagger documentation
 
-[x] Material UI components
+-   [x] Material UI components
 
-[x] Manage secrets through environment variables
+-   [x] Manage secrets through environment variables
 
-[x] React Routing
+-   [x] React Routing
 
-[x] TypeScript for static typing and scalability
+-   [x] TypeScript for static typing and scalability
 
-[x] Linting
+-   [x] Linting
 
-[x] Formatter
+-   [x] Formatter
 
 ## Project Structure
 
