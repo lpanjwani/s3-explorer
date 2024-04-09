@@ -51,7 +51,7 @@ Here's a breakdown of the structure:
 
     - **Testing**: This section provides instructions for running the test suite for both backend project.
 
-    Please refer to the README.md inside the `backend-nest` for detailed instructions.
+    Please refer to the README.md inside the `backend-nest` folder for detailed instructions.
 
 3. **NextJs Frontend**: This section contains the setup and configuration for the Next.js frontend.
 
@@ -65,7 +65,7 @@ Here's a breakdown of the structure:
 
     - **Testing**: This section provides instructions for running the test suite for both the frontend project using npm or yarn.
 
-    Please refer to the README.md inside the `frontend-next` for detailed instructions.
+    Please refer to the README.md inside the `frontend-next` folder for detailed instructions.
 
 ## Assumptions
 
