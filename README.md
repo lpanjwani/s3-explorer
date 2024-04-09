@@ -4,7 +4,7 @@
 
 -   [x] Enumerate available buckets in the AWS account
 
--   [x] View files in tree layout
+-   [x] View files in tree / file explorer layout
 
 -   [x] Access files from a private S3 bucket
 
